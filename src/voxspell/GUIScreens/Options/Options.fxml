@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="981.0" styleClass="root" stylesheets="@Background.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="voxspell.GUIScreens.Options.OptionsController">
+   <children>
+      <VBox layoutX="51.0" layoutY="187.0" spacing="10.0">
+         <children>
+            <Label text="WORDLIST" textFill="#f2ff39">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <SplitPane dividerPositions="0.5, 0.5">
+               <items>
+                  <ComboBox fx:id="wordlistSelectBox" onAction="#handlewordlistSelectBox" prefHeight="51.0" prefWidth="202.0" />
+                  <Button fx:id="btnSetList" mnemonicParsing="false" onAction="#handleBtnSetList" prefHeight="51.0" text="Set list">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Set the current testing list." />
+                     </tooltip></Button>
+                  <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#handleBtnDelete" prefHeight="51.0" prefWidth="146.0" text="Delete list">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Deletes the selected list from the collection" />
+                     </tooltip>
+                  </Button>
+               </items>
+            </SplitPane>
+         </children>
+      </VBox>
+      <Label layoutX="394.0" layoutY="60.0" text="Options" textFill="#f2ff39">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="6.0" layoutY="721.0" mnemonicParsing="false" onAction="#handleBtnBack" prefHeight="41.0" prefWidth="100.0" text="Back">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Go back to main menu" />
+         </tooltip></Button>
+      <VBox layoutX="50.0" layoutY="418.0" spacing="10.0">
+         <children>
+            <Label text="BACKGROUND MUSIC" textFill="#f2ff39">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <SplitPane dividerPositions="0.5" prefHeight="54.0" prefWidth="325.0">
+               <items>
+                  <ComboBox fx:id="musicSelectBox" onAction="#handleMusicSelectBox" prefHeight="51.0" prefWidth="202.0" />
+                  <Button fx:id="btnSetMusic" mnemonicParsing="false" onAction="#handleBtnSetMusic" prefHeight="52.0" prefWidth="147.0" text="Set music">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Set the current background music." />
+                     </tooltip></Button>
+               </items>
+            </SplitPane>
+         </children>
+      </VBox>
+      <Button fx:id="btnUpload" layoutX="51.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleBtnUpload" prefHeight="51.0" prefWidth="155.0" text="Upload list">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Upload your own list for testing!" />
+         </tooltip>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/10/2016, 10:02:58 PM
+    Author     : victor
+*/
+
+@font-face {
+    /* Credited to Craftron Gaming and retrieved from dafont.com */
+    font-family: Minecraft;
+    src: url('Minecraft.ttf');
+}
+
+.root {
+    -fx-background-image: url("environment_forest_evening.png");
+}
+
+.text {
+    -fx-font-family: 'Minecraft';
+    -fx-font-size: 25px;
+}
+
+
+
+

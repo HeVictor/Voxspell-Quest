@@ -1,0 +1,7 @@
+Welcome to Voxspell Quest, brave young speller! To run the program, open up the command prompt and change the directory to the folder this README is in, then enter the command ./RunMe.sh, and then press enter which should start the application.
+
+**HELP**
+At any time if you want to receive some quick help on what a button does, simply hover your mouse over it and a helpful tooltip will pop up. For detailed information, please refer to the user manual for more guidance.
+
+**CREDITS**
+For a list of credits regarding to the images, audios and videos used in the program, please check out the Credits file within the same folder.

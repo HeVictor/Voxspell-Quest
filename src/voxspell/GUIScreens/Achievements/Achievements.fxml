@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="981.0" styleClass="root" stylesheets="@Background.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="voxspell.GUIScreens.Achievements.AchievementsController">
+   <children>
+      <Label layoutX="317.0" layoutY="85.0" text="Achievements" textFill="#f2ff39">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="48.0" layoutY="243.0" spacing="10.0">
+         <children>
+            <Label text="Uploaded a wordlist!" textFill="#fffe9c">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnUploadReward" mnemonicParsing="false" onAction="#handleBtnUpload" prefHeight="48.0" prefWidth="126.0" text="New Music!">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Unlock a new background music." />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="46.0" layoutY="451.0" spacing="10.0">
+         <children>
+            <Label text="Get Best Streak of 5!" textFill="#fffe9c">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnStreak5Reward" mnemonicParsing="false" onAction="#handleBtnStreak5" prefHeight="48.0" prefWidth="126.0" text="New Music!">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Unlock a new background music." />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="521.0" layoutY="243.0" spacing="10.0">
+         <children>
+            <Label text="Get Best Streak of 3!" textFill="#fffe9c">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn3StreakReward" mnemonicParsing="false" onAction="#handleBtn3Streak" prefHeight="48.0" prefWidth="126.0" text="Watch Video!">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Watch a video reward!" />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="524.0" layoutY="451.0" spacing="10.0">
+         <children>
+            <Label text="Master 10 in a level!" textFill="#fffe9c">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnMaster10" mnemonicParsing="false" onAction="#handleBtnMaster10" prefHeight="48.0" prefWidth="126.0" text="Watch Video!">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Watch a video reward!" />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="btnBack" layoutX="6.0" layoutY="721.0" mnemonicParsing="false" onAction="#handleBtnBack" prefHeight="41.0" prefWidth="100.0" text="Back">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Go back to main menu" />
+         </tooltip></Button>
+      <Button fx:id="btnReset" layoutX="877.0" layoutY="721.0" mnemonicParsing="false" onAction="#handleBtnReset" prefHeight="41.0" prefWidth="100.0" text="Reset">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Reset all achievements" />
+         </tooltip></Button>
+   </children>
+</AnchorPane>
